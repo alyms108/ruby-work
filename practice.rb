@@ -24,3 +24,24 @@
 # puts bool1 && bool2
 # puts bool1 || bool2
 # puts !bool2
+
+# Control Flow
+# age = 40
+
+# if age > 40
+# 	puts "I'm over the hill!"
+# elsif age == 40
+# 	puts "I'm on the hill!"
+# else
+# 	puts "I'm feeling young!"
+# end
+
+# boolean = 1!=1
+
+# unless boolean
+# 	puts "Hello"
+# end
+
+# age = 50
+
+# puts age > 40 ? "I'm older than that!" : "No"
