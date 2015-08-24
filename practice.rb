@@ -64,12 +64,37 @@
 # puts array1
 
 # Hashes are Important
-empty_hash = Hash.new
-empty_hash2 = {}
-first_hash = {:first_name => "John", :last_name => "Doe"}
-puts first_hash
+# empty_hash = Hash.new
+# empty_hash2 = {}
+# first_hash = {:first_name => "John", :last_name => "Doe"}
+# puts first_hash
 
-puts first_hash[:first_name]
+# puts first_hash[:first_name]
 
-puts first_hash.keys
-puts first_hash.values
+# puts first_hash.keys
+# puts first_hash.values
+
+# Iterators
+# array1 = ["January", "February", "March"]
+# array1.each do |x|
+# 	puts x
+# end
+
+# array1.each do |y|
+# 	puts "Month name: #{y}" #string interpolation
+# end
+# array1.each{|x| puts "Month name: #{x}"} #shorter way of doing the above
+
+# array2 = [1,2,3]
+# array3 = array2.map{|i| i + 3} #maps output of the addition to each slot in array3
+# print array3
+
+first_hash1 = {:first_name => "John", :last_name => "Doe", :email => "john@example.com"} #old hash style
+first_hash2 = {first_name: "John", last_name: "Doe", email: "john@example.com"} #new hash style
+
+puts first_hash1
+puts first_hash2
+
+first_hash2.each do |key,value|
+	puts "#{key}, #{value}"
+end
