@@ -47,18 +47,29 @@
 # puts age > 40 ? "I'm older than that!" : "No"
 
 # Arrays & Methods
-array1 = ["John","Mary",3,[3,4]]
-puts array1
-array1 << 5
-puts array1
-array1.push("Another string!")
-puts array1
-print array1
-array1.pop
-puts array1
-print array1
+# array1 = ["John","Mary",3,[3,4]]
+# puts array1
+# array1 << 5
+# puts array1
+# array1.push("Another string!")
+# puts array1
+# print array1
+# array1.pop
+# puts array1
+# print array1
 
-array1.pop
-puts array1
-array1.pop
-puts array1
+# array1.pop
+# puts array1
+# array1.pop
+# puts array1
+
+# Hashes are Important
+empty_hash = Hash.new
+empty_hash2 = {}
+first_hash = {:first_name => "John", :last_name => "Doe"}
+puts first_hash
+
+puts first_hash[:first_name]
+
+puts first_hash.keys
+puts first_hash.values
