@@ -89,12 +89,93 @@
 # array3 = array2.map{|i| i + 3} #maps output of the addition to each slot in array3
 # print array3
 
-first_hash1 = {:first_name => "John", :last_name => "Doe", :email => "john@example.com"} #old hash style
-first_hash2 = {first_name: "John", last_name: "Doe", email: "john@example.com"} #new hash style
+# first_hash1 = {:first_name => "John", :last_name => "Doe", :email => "john@example.com"} #old hash style
+# first_hash2 = {first_name: "John", last_name: "Doe", email: "john@example.com"} #new hash style
 
-puts first_hash1
-puts first_hash2
+# puts first_hash1
+# puts first_hash2
 
-first_hash2.each do |key,value|
-	puts "#{key}, #{value}"
-end
+# first_hash2.each do |key,value|
+# 	puts "#{key}, #{value}"
+# end
+
+# Methods are Functions
+# def hello
+# 	puts "Hello, world!"
+# 	puts "yay"
+# end
+# hello #must call the method to execute it; can't just have a definition
+
+# def say_age(x) #methods can take parameters
+# 	puts "I am #{x} years old."
+# end
+# say_age(127)
+
+# def name_and_rank(x,y)
+# 	puts "My name is #{x} and I am a #{y}."
+# end
+# name_and_rank("Shanelle","rook")
+
+# def twenty_years(x)
+# 	age = x + 20
+# 	puts "In twenty years, I'll be #{age} years old."
+# end
+# twenty_years(26)
+
+# Ruby Has Class
+# class Animal
+# 	def breathing
+# 		puts "I'm breathing."
+# 	end
+# end
+
+# animal = Animal.new #create a new 'Animal' and assign it to variable 'animal'
+# animal.breathing #access the breathing method of the object
+
+# class Product
+# 	def show_price
+# 		puts "price x"
+# 	end
+# end
+# product = Product.new
+# product.show_price
+
+# Class Attributes
+# class Animal
+# 	def initialize(color, age) #'initialize' gets ran everytime you create a new object of the class
+# 		@animal_color = color #instance variable; use '@'
+# 		@animal_age = age
+# 	end
+	
+# 	def breathing
+# 		puts "I'm breathing."
+# 	end
+	
+# 	def my_description
+# 		puts "I'm #{@animal_color} and I'm #{@animal_age} years old."
+# 	end
+# end
+# animal = Animal.new("brown",3)
+
+# Inheritance
+# class Animal
+# 	def initialize(color, age) #'initialize' gets ran everytime you create a new object of the class
+# 		@animal_color = color #instance variable; use '@'
+# 		@animal_age = age
+# 	end
+	
+# 	def my_description
+# 		puts "I'm #{@animal_color} and I'm #{@animal_age} years old."
+# 	end
+# end
+# a = Animal.new("brown", 3)
+# a.my_description
+
+# class Dog < Animal #syntax for inheritance; Dog inherits Animal and has its own functions
+# 	def bark
+# 		puts "I'm barking."
+# 	end
+# end
+# dog = Dog.new("black",5)
+# dog.my_description
+# dog.bark
